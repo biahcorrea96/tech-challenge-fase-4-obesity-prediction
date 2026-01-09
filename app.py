@@ -250,7 +250,14 @@ components = load_model()
 
 # Sidebar - Menu de Navegação
 with st.sidebar:
-    st.image("https://truehealthpeds.com/wp-content/uploads/truehealth-favicon.png", width=60)
+    #st.image("https://truehealthpeds.com/wp-content/uploads/truehealth-favicon.png", width=115)
+    st.markdown(    """
+    <div style="display: flex; justify-content: center;">
+        <img src="https://truehealthpeds.com/wp-content/uploads/truehealth-favicon.png" width="115">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     st.markdown("### Sistema de Avaliação de Risco de Obesidade")
     
     st.markdown("---")
