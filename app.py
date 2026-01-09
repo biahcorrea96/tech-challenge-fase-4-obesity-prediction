@@ -116,11 +116,6 @@ st.markdown("""
         font-weight: 700;
     }
 
-    /* Mudar cor dos sliders e inputs */
-    .stSlider > div > div > div > div {
-        background-color: #1E3A5F !important;
-    }
-
     /* Mudar cor do radio button selecionado */
     .stRadio > div > label > div:first-child {
         background-color: #1E3A5F !important;
