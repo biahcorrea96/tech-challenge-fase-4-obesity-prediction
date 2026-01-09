@@ -282,7 +282,7 @@ with st.sidebar:
 
 # Página de Informações
 if menu == "📋 Informações do Sistema":
-    st.markdown('<div class="main-header">🏥 Sistema de Avaliação de Risco de Obesidade</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header">Sistema de Avaliação de Risco de Obesidade</div>', unsafe_allow_html=True)
     
     # Sobre o Sistema
     st.markdown("## Sobre o Sistema")
@@ -395,8 +395,8 @@ if menu == "📋 Informações do Sistema":
     
     st.markdown("#### Desenvolvedores")
     st.markdown("""
-    - **Bianca Correa** - bianca.correa@email.com
-    - **Daniele Andrino** - daniele.andrino@email.com
+    - **Bianca Correa** - bianca.correa@fiap.com.br
+    - **Daniele Andrino** - daniele.andrino@fiap.com.br
     """)
     
     st.markdown("---")
