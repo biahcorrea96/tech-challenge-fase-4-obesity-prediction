@@ -333,7 +333,7 @@ if menu == "📋 Informações do Sistema":
     st.markdown("---")
     
     # Classificações de Risco
-    st.markdown("### 📊 Classificações de Risco")
+    st.markdown("### 📝 Classificações de Risco")
     
     st.markdown("""
     O sistema classifica os pacientes em **7 níveis de risco**, permitindo uma abordagem 
@@ -384,6 +384,18 @@ if menu == "📋 Informações do Sistema":
         - Tempo em telas
         - Meio de transporte
         """)
+
+    st.markdown("---")
+    
+    # Dashboard Analítico
+    st.markdown("### 📊 Dashboard Analítico")
+    
+    st.markdown("""
+    O dashboard apresenta uma visão multidimensional da saúde dos usuários, correlacionando
+    hábitos cotidianos (como alimentação, transporte e atividade física) com o perfil 
+    antropométrico e as diferentes classes de obesidade.
+    [Acesse aqui o dash](https://app.powerbi.com/view?r=eyJrIjoiYTQ2MjQ4MjMtZWQ3Ni00MDZmLThhZTMtYTIyNWRjNmViY2Q2IiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9)
+    """)
     
     st.markdown("---")
     
