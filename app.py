@@ -443,10 +443,10 @@ elif menu == "🔬 Realizar Avaliação":
             
             with col1:
                 st.markdown("#### 👤 Perfil")
-                gender = st.selectbox("Gênero", ["Female", "Male"], format_func=lambda x: "Feminino" if x == "Female" else "Masculino")
-                age = st.number_input("Idade (anos)", min_value=10, max_value=100, value=30)
+                gender = st.selectbox("Gênero", ["Female", "Male"], index=1, format_func=lambda x: "Feminino" if x == "Female" else "Masculino")
+                age = st.number_input("Idade (anos)", min_value=10, max_value=100, value=25)
                 height = st.number_input("Altura (metros)", min_value=1.0, max_value=2.5, value=1.70, step=0.01)
-                weight = st.number_input("Peso (kg)", min_value=30.0, max_value=200.0, value=70.0, step=0.5)
+                weight = st.number_input("Peso (kg)", min_value=30.0, max_value=200.0, value=90.0, step=0.5)
                 family_history = st.selectbox("Histórico familiar de sobrepeso", ["yes", "no"], format_func=lambda x: "Sim" if x == "yes" else "Não")
             
             with col2:
@@ -455,11 +455,11 @@ elif menu == "🔬 Realizar Avaliação":
                 fcvc = st.slider("Frequência de consumo de vegetais", min_value=1.0, max_value=3.0, value=2.0, step=0.5, help="1 = Raramente, 3 = Sempre")
                 ncp = st.slider("Número de refeições principais", min_value=1.0, max_value=4.0, value=3.0, step=0.5)
                 caec = st.selectbox("Consumo de alimentos entre refeições", 
-                                   ["no", "Sometimes", "Frequently", "Always"],
+                                   ["no", "Sometimes", "Frequently", "Always"], index=1,
                                    format_func=lambda x: {"no": "Não", "Sometimes": "Às vezes", "Frequently": "Frequentemente", "Always": "Sempre"}[x])
                 ch2o = st.slider("Consumo diário de água (litros)", min_value=1.0, max_value=3.0, value=2.0, step=0.5)
                 calc = st.selectbox("Consumo de bebidas alcoólicas", 
-                                   ["no", "Sometimes", "Frequently", "Always"],
+                                   ["no", "Sometimes", "Frequently", "Always"], index=1,
                                    format_func=lambda x: {"no": "Não", "Sometimes": "Às vezes", "Frequently": "Frequentemente", "Always": "Sempre"}[x])
             
             with col3:
