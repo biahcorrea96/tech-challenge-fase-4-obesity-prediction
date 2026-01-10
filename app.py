@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import plotly.graph_objects as go
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Configuração da página
 st.set_page_config(
