@@ -11,7 +11,6 @@ import numpy as np
 import pickle
 import plotly.graph_objects as go
 from datetime import datetime
-import pytz
 
 # Configuração da página
 st.set_page_config(
@@ -649,8 +648,7 @@ elif menu == "🔬 Realizar Avaliação":
                 st.markdown(f"""
                 **Classificação do IMC:** {imc_class}
                 
-                tz_brasil = pytz.timezone('America/Sao_Paulo')
-                **Data da avaliação:** {datetime.now(tz_brasil).strftime("%d/%m/%Y às %H:%M")}
+                **Data da avaliação:** {(datetime.now() - timedelta(hours=3)).strftime("%d/%m/%Y às %H:%M")}
                 
                 **Observações:**
                 - O IMC é um indicador auxiliar
